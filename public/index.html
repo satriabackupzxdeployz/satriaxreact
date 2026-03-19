@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SatriaDevs - WA Reaction</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <div class="main-container">
+        <div class="card">
+            <header class="animate-in" style="--delay: 0.1s">
+                <h1 class="neon-text">SatriaDevs</h1>
+                <p>WA Channel Reaction Tool</p>
+            </header>
+
+            <div class="input-group animate-in" style="--delay: 0.2s">
+                <label>URL Channel WhatsApp</label>
+                <div class="sub-label">Link chat salurannya:</div>
+                <input type="text" id="postUrl" placeholder="" spellcheck="false">
+            </div>
+
+            <div class="input-group animate-in" style="--delay: 0.3s">
+                <label>Masukin emoji</label>
+                <div class="sub-label">Contoh: 😂,🔥,❤️</div>
+                <div class="emoji-hint" id="emojiHint">Sistem akan otomatis menambahkan koma jika diperlukan</div>
+                <input type="text" id="emojis" placeholder="" spellcheck="false">
+            </div>
+
+            <div class="input-group animate-in" style="--delay: 0.35s">
+                <label>Jumlah Reaction</label>
+                <div class="sub-label">Maksimal 5000 kali</div>
+                <input type="number" id="reactionCount" min="1" max="5000" value="1000" placeholder="1000">
+            </div>
+
+            <button id="btnReact" class="animate-in" style="--delay: 0.4s">
+                <span class="btn-text">GAS</span>
+                <div class="loader-container hidden">
+                    <div class="scanning-bar"></div>
+                    <div class="digital-bar">
+                        <div class="digital-fill"></div>
+                    </div>
+                    <span class="loading-status">BENTAR...</span>
+                </div>
+            </button>
+
+            <div class="result-container animate-in" style="--delay: 0.5s">
+                <div id="result" class="result-box hidden"></div>
+            </div>
+
+            <footer class="follow-me animate-in" style="--delay: 0.6s">
+                <span>Follow & Support</span>
+                <div class="social-links">
+                    <a href="https://whatsapp.com/channel/0029VbBO6h6LY6czYDJ3bc1I" target="_blank" class="social-item wa">WhatsApp</a>
+                    <a href="https://saweria.co/satriadev" target="_blank" class="social-item donate">Donasi</a>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="/app.js"></script>
+</body>
+</html>
